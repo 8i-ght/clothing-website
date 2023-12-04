@@ -426,3 +426,30 @@ a {
     font-weight: 800;
     font-size: 15px;
 }
+
+/* Footer Styling  */
+
+footer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background-color: #fffff2;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .icon {
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 25px;
+    font-family: ;
+}
