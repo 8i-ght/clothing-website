@@ -143,7 +143,6 @@ a {
     background-color: #fbf7f5; 
     height: 80vh;
     width: 100%;
-    margin: auto; 
     background-position: top 0% right 80%;
     background-size: cover;
     padding: 0px 80px;
@@ -153,19 +152,13 @@ a {
     justify-content: center;
 }
 
-.hero-word {
-    width: 50%;
-    margin: auto;
-}
-
-
 .hero h4 {
     padding-bottom: 15px;
-    color: #FFE787;
+    color: #7ec7ff;
 }
 
 .hero h1 {
-    color: #FFE787;
+    color: #79c5ff;
 }
 
 .hero button {
@@ -178,6 +171,10 @@ a {
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
+}
+
+.hero button:hover {
+    box-shadow: 10px 10px 50px rgba(13, 12, 33, 0.2);
 }
 
 #feature {
@@ -341,8 +338,12 @@ a {
     color: red;
 } 
 
-#banner button:hover {
+#banner:hover button {
     background-color: rgb(195, 57, 57);
+    transition: 0.3s ease;
+}
+
+#banner button:hover {
     color: white;
     transition: 0.3s ease;
 }
@@ -442,14 +443,38 @@ footer .col {
     flex-direction: column;
     flex-wrap: flex-start;
     margin-bottom: 20px;
+    gap: 20px;
+}
+
+footer .col1 {
+    gap: 10px;
 }
 
 footer .icon {
-    justify-content: space-between;
-    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
 }
 
 footer h4 {
     font-size: 25px;
-    font-family: ;
+}
+
+footer a {
+    position: relative;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #463f3a;
+}
+
+footer a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #463f3a;
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
 }
