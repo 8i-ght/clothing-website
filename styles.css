@@ -92,8 +92,6 @@ a {
     align-items: center;
     justify-content: center;
     padding: 20px 80px;
-    background: #dcdad6;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -144,8 +142,15 @@ a {
     background-size: cover;
     padding: 0px 80px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-container {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .hero button {
