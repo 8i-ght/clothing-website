@@ -168,64 +168,6 @@ a {
     box-shadow: 10px 10px 50px rgba(13, 12, 33, 0.2);
 }
 
-#feature {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#feature .fe-box {
-    width: 180px;
-    height: 170px;
-    text-align: center;
-    font-size: 4em;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0 ,0, 0.03 );
-    border: 1px solid #ccc; 
-    border-radius: 15px;
-    margin: 15px 0;
-}
-
-#feature .fe-box:hover {
-    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-    cursor: pointer;
-} 
-
-#feature .fe-box img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-#feature .fe-box h6 {
-    display: inline-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: #E4DFDA;
-    background-color: #C1666B;
-}
-
-#feature .fe-box:nth-child(2) h6 {
-    background-color: #48A9A6;
-}
-
-#feature .fe-box:nth-child(3) h6 {
-    background-color: #D4B483;
-}
-
-#feature .fe-box:nth-child(4) h6 {
-    background-color: #84E296;
-}
-
-#feature .fe-box:nth-child(5) h6 {
-    background-color: #D4ADCF;
-}
-
-#feature .fe-box:nth-child(6) h6 {
-    background-color: #FFA552;
-}
-
 #product1 {
     text-align: center;
 }
