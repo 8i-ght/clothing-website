@@ -142,12 +142,11 @@ a {
     align-items: center;
 }
 
-
-
-.button {
+.button a{
     align-items: center;
     margin-top: 350px;
     display: flex;
+    text-decoration: none;
 }
 
 .shop-btn {
@@ -162,6 +161,7 @@ a {
     font-size: 15px;
 
 }
+
 
 
 /* .hero button {
@@ -209,7 +209,7 @@ a {
 }
 
 #product1 .pro img {
-    display: none;
+    display: flex;
     width: 100%;
     border-radius: 20px;
 }
@@ -226,6 +226,7 @@ a {
 
 #product1 .pro .des h5 {
     padding-top: 7px;
+    padding-bottom: 7px;
     color: #1a1a1a;
     font-size: 14px;
 }
@@ -242,7 +243,7 @@ a {
     color: #088178;
 }
 
-#product1 .pro .cart {
+/* #product1 .pro .cart {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -254,7 +255,7 @@ a {
     position: absolute;
     bottom: 20px;
     right: 10px;
-}
+} */
 
 #banner {
     display: flex;
