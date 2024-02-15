@@ -73,14 +73,6 @@ body {
     width: 100%;
 }
 
-.logo {
-    width: 10%;
-}
-
-.logo2 {
-    width: 15%;
-}
-
 a {
     color: black;
 }
@@ -134,7 +126,7 @@ a {
 
 /* Home Page */
 .hero {
-    background-image: url(img/IMG_6063.jpeg);
+    background-image: url(img/train-tracks.png);
     background-color: #fbf7f5; 
     height: 100vh;
     background-position: top 35% right 80%;
@@ -383,7 +375,8 @@ footer {
    justify-content: space-between;
    background-color: #fffff2;
    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-   background-color: #5454545c;
+   background-image: url('img/footer-banner.png');
+   background-size: cover;
 }
 
 footer .col {
@@ -392,6 +385,8 @@ footer .col {
     flex-wrap: flex-start;
     margin-bottom: 20px;
     gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
 }
 
 footer .col1 {
