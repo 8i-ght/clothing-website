@@ -71,6 +71,7 @@ button.white {
 
 body {
     width: 100%;
+    background-color:#fafafa
 }
 
 a {
@@ -284,7 +285,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(#);
     min-width: 500px;
     height: 50vh;
     background-size: cover;
@@ -396,15 +396,31 @@ footer a {
 }
 
 footer a:hover {
-    color: #ffffff;
+    color: #616161;
 }
 
 footer a:hover::after {
     content: "";
     width: 30%;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #838383;
     position: absolute;
     bottom: -4px;
     left: 1px;
+}
+
+/* Response Section */
+
+@media (max-width: 850px) {
+    #sm-banner .banner-box {
+        min-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #sm-banner .banner-box {
+        min-width: 40%;
+        margin-top: 20px;
+    }
 }
