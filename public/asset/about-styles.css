@@ -1,0 +1,97 @@
+.about-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 92%;
+    padding-bottom: 150px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgba(94, 94, 94, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me p {
+    color: white;
+    font-size: 17.5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-me h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 1700px) {
+    .about-me {
+        width: 50%;
+    }
+
+    .about-me h2 {
+        font-size: 40px;
+    }
+
+    .about-me p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-me {
+        width: 80%;
+    }
+
+    .about-me h2 {
+        font-size: 20px;
+    }
+
+    .about-me p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .about-me {
+        width: 80%;
+    }
+
+    .about-me h2 {
+        font-size: 20px;
+    }
+
+    .about-me p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-me {
+        width: 80%;
+    }
+
+    .about-me h2 {
+        font-size: 20px;
+    }
+
+    .about-me p {
+        font-size: 10px;
+    }
+}

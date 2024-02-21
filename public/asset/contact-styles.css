@@ -1,0 +1,15 @@
+.con-banner {
+    height: 30%;
+    background-image: url('img/contact-banner.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-banner .con-info h4 {
+    padding: 20px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
