@@ -152,7 +152,6 @@ a {
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
-
 }
 
 .hero button:hover {
@@ -422,5 +421,23 @@ footer a:hover::after {
     #sm-banner .banner-box {
         min-width: 40%;
         margin-top: 20px;
+    }
+}
+
+@media (max-height: 600px) {
+    .button a {
+        margin-top: 250px;
+    }
+}
+
+@media (max-height: 500px) {
+    .button a {
+        margin-top: 200px;
+    }
+}
+
+@media (max-height: 400px) {
+    .button a {
+        margin-top: 150px;
     }
 }
