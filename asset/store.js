@@ -18,12 +18,25 @@ const ready = () => {
             updateCartTotal();
         })
     }
-    // Get the number of items that the product has in the cart
+    // Get the quantity of items that the product has in the cart
     const quantityInputs = document.getElementsByClassName('cart-quan-input');
     for (let i = 0; i < quantityInputs.length; i++) {
         const input = quantityInputs[i];
         input.addEventListener('change', quantityChanged);
     }
+
+    const addToCart = document.getElementById('send-button');
+    for (let i = 0; i < addToCart.length; i++) {
+        const button = addToCart[i];
+        button.addEventListener('click', addToCartClicked);
+    }
+}
+
+const addToCartClicked = (event) => {
+    const button = event.target;
+    const shopItem = button.parentElement.parentElement;
+    const product = shopItem.querySelector('#product-name').innerText;
+    console.log(product);
 }
 
 // Check if Dom is loaded so no errors appear
@@ -43,15 +56,13 @@ let updateCartTotal = () => {
         const priceElement = cartRow.getElementsByClassName('cart-price')[0];
         const quantityElement = cartRow.getElementsByClassName('cart-quan-input')[0];
         const price = parseFloat(priceElement.innerText.replace('$', ""));
-        const quantity = quantityElement.value;
+        const quantity = quantityElement.querySelector('input').value;
         total = total + (price * quantity);
     }
-    document.getElementById('total-price').innerText = '$' + total;
-    document.getElementById('cart-subtotal').innerText = '$' + total;
+    total = (Math.round(total * 100) / 100).toFixed(2);
+    const cartPrice = document.getElementById   
+    ('total-price').innerText = '$' + total;
+    const cartSubtotal = document.getElementById('cart-subtotal').innerText = '$' + total;
 }
 
-const sendProduct = () => {
-
-}
-
-// 22:30 on video
+// video 26:30
