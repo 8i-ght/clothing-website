@@ -25,25 +25,40 @@ const ready = () => {
         input.addEventListener('change', quantityChanged);
     }
 
-    const addToCart = document.getElementById('send-button');
+    // Button for adding items to cart
+    const addToCart = document.getElementsByClassName('send-button');
     for (let i = 0; i < addToCart.length; i++) {
         const button = addToCart[i];
         button.addEventListener('click', addToCartClicked);
     }
 }
 
+// Function for adding items to cart
 const addToCartClicked = (event) => {
     const button = event.target;
-    const shopItem = button.parentElement.parentElement;
-    const product = shopItem.querySelector('#product-name').innerText;
-    console.log(product);
+    const shopItem = button.parentElement;
+    const shopImg = button.parentElement.parentElement;
+    const product = shopItem.querySelector('.product-name').innerText;
+    const price = shopItem.querySelector('.shop-price').innerText;
+    const imageSrc = shopImg.querySelector('.shop-image').src;
+    console.log(product, price, imageSrc);
+    addItemToCart(product, price, imageSrc);
 }
+
+
 
 // Check if Dom is loaded so no errors appear
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready();
+}
+
+addItemToCart = (product, price, imageSrc) => {
+    const cartRow = document.createElement('div');
+    cartRow.innerText = product;
+    const cartItems = document.getElementsByClassName('cart-items')[0];
+    cartItems.append(cartRow);                  
 }
 
 // Function for updating the cart total
@@ -65,4 +80,4 @@ let updateCartTotal = () => {
     const cartSubtotal = document.getElementById('cart-subtotal').innerText = '$' + total;
 }
 
-// video 26:30
+// video 30:42
