@@ -37,29 +37,13 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="cart-items">
+                <tr class="cart-row">
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img class="table-img" src="img/north-face-puffer.png"></td>
                     <td>South Face Puffer</td>
-                    <td>$90.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$90.00</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img class="table-img" src="img/north-face-puffer.png"></td>
-                    <td>South Face Puffer</td>
-                    <td>$90.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$90.00</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img class="table-img" src="img/north-face-puffer.png"></td>
-                    <td>South Face Puffer</td>
-                    <td>$90.00</td>
-                    <td><input type="number" value="1"></td>
+                    <td class="cart-price">$90.00</td>
+                    <td class="cart-quan-input" ><input type="number" value="1"></td>
                     <td>$90.00</td>
                 </tr>
             </tbody>
@@ -71,7 +55,7 @@
         <table>
             <tr>
                 <td>Cart Subtotal</td>
-                <td>$335</td>
+                <td id="cart-subtotal">$90.00</td>
             </tr>
             <tr>
                 <td>Shipping</td>
@@ -79,7 +63,7 @@
             </tr>
             <tr>
                 <td>Total</td>
-                <td>$335</td>
+                <td id="total-price">$90.00</td>
             </tr>
         </table>
 
@@ -123,4 +107,5 @@
         </div>
     </footer>
 
+    <script src="store.js" async></script>
 </body>

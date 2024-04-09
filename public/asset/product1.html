@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="shop-styles.css">
     <link rel="stylesheet" href="product-styles.css">
     <script src="https://kit.fontawesome.com/2480d3976a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -27,13 +28,12 @@
 
     <section id="product-details" class="section-p1">
         <div class="single-product-image">
-            <img src="img/north-face-puffer.png" width="100%">
+            <img class='shop-image' src="img/north-face-puffer.png" width="100%">
         </div>
-        
         <div class="single-product-details">
             <h6>Home / Puffer</h6>
-            <h4>The South Face Puffer Jacket</h4>
-            <h2>$115.00</h2>
+            <h4 class="product-name">The South Face Puffer Jacket</h4>
+            <h2 class="shop-price">$115.00</h2>
             <select>
                 <option> Select Size</option>
                 <option> Small</option>
@@ -43,7 +43,7 @@
                 <option> XXL</option>
             </select>
             <input type="number" value="1">
-            <button class="normal">Add to Cart</button>
+            <button class="normal send-button">Add to Cart</button>
             <h4>Product Details</h4>
             <span>
                 The South Face Puffer Jacket combines style, functionality, and warmth to keep you comfortable during outdoor adventures in chilly weather. Whether you're hiking, skiing, or simply running errands around town, this jacket is designed to keep you cozy and protected from the elements.
@@ -145,4 +145,5 @@
         </div>
     </footer>
 
+    <script src="store.js" async></script>
 </body>
