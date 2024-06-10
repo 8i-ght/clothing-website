@@ -17,21 +17,31 @@ const ready = () => {
             event.target.parentElement.parentElement.parentElement.remove();
             updateCartTotal();
         })
-    }
+    }d
     // Get the quantity of items that the product has in the cart
     const quantityInputs = document.getElementsByClassName('cart-quan-input');
     for (let i = 0; i < quantityInputs.length; i++) {
         const input = quantityInputs[i];
         input.addEventListener('change', quantityChanged);
     }
-
-    // Button for adding items to cart
-    const addToCart = document.getElementsByClassName('send-button');
-    for (let i = 0; i < addToCart.length; i++) {
-        const button = addToCart[i];
-        button.addEventListener('click', addToCartClicked);
-    }
 }
+
+ // Button for adding items to cart
+ const addToCart = document.getElementsByClassName('send-button');
+    addToCart.addEvenListener('click', () => {
+        const product = {
+            name: product,
+            price: price,
+            image: imageSrc
+        };
+        cartInv = JSON.parse(localStorage.getItem('cartInv')) || [];
+        cartInv.push(product);
+        localStorage.setItem('cartInv', JSON.stringify(cartInv));
+    })
+//  for (let i = 0; i < addToCart.length; i++) {
+//      const button = addToCart[i];
+//      button.addEventListener('imageSrcclick', addToCartClicked);
+//  }
 
 // Function for adding items to cart
 const addToCartClicked = (event) => {
